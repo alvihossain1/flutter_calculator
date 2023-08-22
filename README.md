@@ -1,6 +1,6 @@
 # flutter_calculator
 
-A new Flutter project.
+Flutter Calculator - Mobile Application Development - CSE464
 
 ## Getting Started
 
