@@ -21,7 +21,7 @@ class _HomeState extends State<Home> {
   void clicked(val){
     setState(() {
       if(str.toString().isEmpty){
-        if(val == "x" || val == "*" || val == "/" || val == "-" || val == "+" || val == "C" || val == "AC" || val == "="){
+        if(val == "x" || val == "*" || val == "/" || val == "-" || val == "+" || val == "c" || val == "AC" || val == "="){
           display = "";
           result = "";
           str = "";
@@ -42,13 +42,12 @@ class _HomeState extends State<Home> {
       //   display = result.toString();
       // }
 
-
       if(val == "AC"){
         str = "";
         display = "";
         result = "";
       }
-      else if(val == "C"){
+      else if(val == "c"){
         str = str.substring(0, str.length - 1);
       }
       else if(val == "="){
@@ -70,7 +69,6 @@ class _HomeState extends State<Home> {
         if(display.contains("/")){
           final split = display.split("/");
           display = Fraction(int.parse(split[0]), int.parse(split[1])).toDouble().toString();
-          print(display);
         }
         else{
           double number = double.parse(display);
@@ -81,7 +79,6 @@ class _HomeState extends State<Home> {
       else{
         str += val;
       }
-      // str = str.replaceAll("x", "*");
     });
 
   }
@@ -99,7 +96,6 @@ class _HomeState extends State<Home> {
         leading: Icon(Icons.menu_open, color: Colors.white,),
       ),
       body: Container(
-        // color: Color(0xFF003366),
         color: Color(0xFF0B344F),
         child: Column(
           children: [
@@ -134,9 +130,9 @@ class _HomeState extends State<Home> {
                       ),
                       GestureDetector(
                         onTap: (){
-                          clicked("C");
+                          clicked("c");
                         },
-                        child: sampleButton(value: "C",),
+                        child: sampleButton(value: "c",),
                       ),
                       GestureDetector(
                         onTap: (){
