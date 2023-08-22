@@ -98,14 +98,13 @@ class _HomeState extends State<Home> {
         backgroundColor: Color(0xFF0E2433),
         leading: Icon(Icons.menu_open, color: Colors.white,),
       ),
-      body: SingleChildScrollView(
-        child: Container(
-          // color: Color(0xFF003366),
-          color: Color(0xFF0B344F),
-          child: Column(
-            children: [
-              Container(
-                height: size.height/2.5,
+      body: Container(
+        // color: Color(0xFF003366),
+        color: Color(0xFF0B344F),
+        child: Column(
+          children: [
+            Expanded(
+              child: Container(
                 width: size.width,
                 padding: EdgeInsets.symmetric(vertical: 32, horizontal: 30),
                 color: Color(0xFF0E2433),
@@ -119,195 +118,195 @@ class _HomeState extends State<Home> {
                 ),
 
               ),
-              Container(
-                child: Column(
-                  ///BUTTONS
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Row(
-                      children: [
-                        GestureDetector(
-                          onTap: (){
-                            clicked("AC");
-                          },
-                          child: sampleButton(value: "AC",),
-                        ),
-                        GestureDetector(
-                          onTap: (){
-                            clicked("C");
-                          },
-                          child: sampleButton(value: "C",),
-                        ),
-                        GestureDetector(
-                          onTap: (){
-                            clicked("x");
-                          },
-                          child: sampleButton(value: "x",),
-                        ),
-                        GestureDetector(
-                          onTap: (){
-                            clicked("/");
-                          },
-                          child: sampleButton(value: "/",),
-                        ),
-                      ],
-                    ),
-                    Row(
-                      children: [
-                        GestureDetector(
-                          onTap: (){
-                            clicked("(");
-                          },
-                          child: sampleButton(value: "(",),
-                        ),
-                        GestureDetector(
-                          onTap: (){
-                            clicked(")");
-                          },
-                          child: sampleButton(value: ")",),
-                        ),
-                        GestureDetector(
-                          onTap: (){
-                            clicked("%");
-                          },
-                          child: sampleButton(value: "%",),
-                        ),
-                        GestureDetector(
-                          onTap: (){
-                            clicked("*");
-                          },
-                          child: sampleButton(value: "*",),
-                        ),
-                      ],
-                    ),
+            ),
+            Container(
+              child: Column(
+                ///BUTTONS
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    children: [
+                      GestureDetector(
+                        onTap: (){
+                          clicked("AC");
+                        },
+                        child: sampleButton(value: "AC",),
+                      ),
+                      GestureDetector(
+                        onTap: (){
+                          clicked("C");
+                        },
+                        child: sampleButton(value: "C",),
+                      ),
+                      GestureDetector(
+                        onTap: (){
+                          clicked("x");
+                        },
+                        child: sampleButton(value: "x",),
+                      ),
+                      GestureDetector(
+                        onTap: (){
+                          clicked("/");
+                        },
+                        child: sampleButton(value: "/",),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      GestureDetector(
+                        onTap: (){
+                          clicked("(");
+                        },
+                        child: sampleButton(value: "(",),
+                      ),
+                      GestureDetector(
+                        onTap: (){
+                          clicked(")");
+                        },
+                        child: sampleButton(value: ")",),
+                      ),
+                      GestureDetector(
+                        onTap: (){
+                          clicked("%");
+                        },
+                        child: sampleButton(value: "%",),
+                      ),
+                      GestureDetector(
+                        onTap: (){
+                          clicked("*");
+                        },
+                        child: sampleButton(value: "*",),
+                      ),
+                    ],
+                  ),
 
-                    Row(
-                      children: [
-                        GestureDetector(
-                          onTap: (){
-                            clicked("1");
-                          },
-                          child: sampleButton(value: "1",),
-                        ),
-                        GestureDetector(
-                          onTap: (){
-                            clicked("2");
-                          },
-                          child: sampleButton(value: "2",),
-                        ),
-                        GestureDetector(
-                          onTap: (){
-                            clicked("3");
-                          },
-                          child: sampleButton(value: "3",),
-                        ),
-                        GestureDetector(
-                          onTap: (){
-                            clicked("-");
-                          },
-                          child: sampleButton(value: "-",),
-                        ),
-                      ],
-                    ),
+                  Row(
+                    children: [
+                      GestureDetector(
+                        onTap: (){
+                          clicked("1");
+                        },
+                        child: sampleButton(value: "1",),
+                      ),
+                      GestureDetector(
+                        onTap: (){
+                          clicked("2");
+                        },
+                        child: sampleButton(value: "2",),
+                      ),
+                      GestureDetector(
+                        onTap: (){
+                          clicked("3");
+                        },
+                        child: sampleButton(value: "3",),
+                      ),
+                      GestureDetector(
+                        onTap: (){
+                          clicked("-");
+                        },
+                        child: sampleButton(value: "-",),
+                      ),
+                    ],
+                  ),
 
-                    Row(
-                      children: [
-                        GestureDetector(
+                  Row(
+                    children: [
+                      GestureDetector(
+                        onTap: (){
+                          clicked("4");
+                        },
+                        child: sampleButton(value: "4",),
+                      ),
+                      GestureDetector(
+                        onTap: (){
+                          clicked("5");
+                        },
+                        child: sampleButton(value: "5",),
+                      ),
+                      GestureDetector(
+                        onTap: (){
+                          clicked("6");
+                        },
+                        child: sampleButton(value: "6",),
+                      ),
+                      GestureDetector(
+                        onTap: (){
+                          clicked("+");
+                        },
+                        child: sampleButton(value: "+",),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Container(
+                        width: size.width*0.75,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Row(
+                              children: [
+                                GestureDetector(
+                                  onTap: (){
+                                    clicked("7");
+                                  },
+                                  child: sampleButton(value: "7",),
+                                ),
+                                GestureDetector(
+                                  onTap: (){
+                                    clicked("8");
+                                  },
+                                  child: sampleButton(value: "8",),
+                                ),
+                                GestureDetector(
+                                  onTap: (){
+                                    clicked("9");
+                                  },
+                                  child: sampleButton(value: "9",),
+                                ),
+                              ],
+                            ),
+                            Row(
+                              children: [
+                                GestureDetector(
+                                  onTap: (){
+                                    clicked("0");
+                                  },
+                                  child: sampleButton(value: "0",),
+                                ),
+                                GestureDetector(
+                                  onTap: (){
+                                    clicked("00");
+                                  },
+                                  child: sampleButton(value: "00",),
+                                ),
+                                GestureDetector(
+                                  onTap: (){
+                                    clicked(".");
+                                  },
+                                  child: sampleButton(value: ".",),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                      ),
+                      GestureDetector(
                           onTap: (){
-                            clicked("4");
+                            clicked("=");
                           },
-                          child: sampleButton(value: "4",),
-                        ),
-                        GestureDetector(
-                          onTap: (){
-                            clicked("5");
-                          },
-                          child: sampleButton(value: "5",),
-                        ),
-                        GestureDetector(
-                          onTap: (){
-                            clicked("6");
-                          },
-                          child: sampleButton(value: "6",),
-                        ),
-                        GestureDetector(
-                          onTap: (){
-                            clicked("+");
-                          },
-                          child: sampleButton(value: "+",),
-                        ),
-                      ],
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Container(
-                          width: size.width*0.75,
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Row(
-                                children: [
-                                  GestureDetector(
-                                    onTap: (){
-                                      clicked("7");
-                                    },
-                                    child: sampleButton(value: "7",),
-                                  ),
-                                  GestureDetector(
-                                    onTap: (){
-                                      clicked("8");
-                                    },
-                                    child: sampleButton(value: "8",),
-                                  ),
-                                  GestureDetector(
-                                    onTap: (){
-                                      clicked("9");
-                                    },
-                                    child: sampleButton(value: "9",),
-                                  ),
-                                ],
-                              ),
-                              Row(
-                                children: [
-                                  GestureDetector(
-                                    onTap: (){
-                                      clicked("0");
-                                    },
-                                    child: sampleButton(value: "0",),
-                                  ),
-                                  GestureDetector(
-                                    onTap: (){
-                                      clicked("00");
-                                    },
-                                    child: sampleButton(value: "00",),
-                                  ),
-                                  GestureDetector(
-                                    onTap: (){
-                                      clicked(".");
-                                    },
-                                    child: sampleButton(value: ".",),
-                                  ),
-                                ],
-                              ),
-                            ],
-                          ),
-                        ),
-                        GestureDetector(
-                            onTap: (){
-                              clicked("=");
-                            },
-                            child: sampleButton(value: "=", buttonColor: Color(0xFF296D98), buttonHeight: 3.02,)
-                        ),
-                      ],
-                    ),
+                          child: sampleButton(value: "=", buttonColor: Color(0xFF296D98), buttonHeight: 3.02,)
+                      ),
+                    ],
+                  ),
 
-                  ],
-                ),
+                ],
               ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );

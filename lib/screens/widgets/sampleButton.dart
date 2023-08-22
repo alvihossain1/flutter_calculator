@@ -22,7 +22,6 @@ class _sampleButtonState extends State<sampleButton> {
       color: widget.buttonColor == null ? Colors.black12 :  widget.buttonColor,
       alignment: Alignment.center,
       width: size.width*0.25,
-      // height: size.height*0.08,
       padding: EdgeInsets.symmetric(vertical: height == null ? 15.6 : 15.6*height),
       child: Text(widget.value, style: TextStyle(color: Colors.white, fontSize: 25, fontWeight: FontWeight.bold),),
     );
